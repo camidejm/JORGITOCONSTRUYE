@@ -1,0 +1,244 @@
+.footer {
+    background-color: #0D0D0D;
+    color: #F8F8F8;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+.contenedor-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    list-style: none;
+}
+
+.footer-nav ul li a {
+    color: #D9BEA7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+    color: #BC7C6D;
+}
+.redes-sociales{
+    margin: 15px 0;
+}
+.redes-sociales a{
+    color: #D9BEA7;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+.redes-sociales a:hover{
+    color: #BC7C6D;
+}
+.copyright{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+body {
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body {
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding-top: 60px;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.logo {
+    color: black;
+    font-size: 25px;
+    font-weight: 800;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-weight: 400;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.menu .navbar ul li a{
+    color: black;
+}
+
+.menu .navbar ul li a:hover {
+    color: black;
+    color: #735943; 
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:900px) {
+    .header {
+        position: relative;
+    }
+
+    .header-content {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 45px;
+        line-height: 100px;
+    }
+
+    .header-content p {
+        padding: 0;
+        font-size: 16px;
+    }
+    .menu-icono {
+        display: block; /* Asegura que se vea en móviles */
+        cursor: pointer;
+        width: 30px; /* Ajusta el tamaño */
+        position: absolute;
+        top: 15px; /* Espaciado desde la parte superior */
+        right: 20px;
+        z-index: 1100;
+    }
+    .search-icon {
+        position: absolute;
+        top: 10px;
+        /* Ajusta este valor segÃºn la altura del menÃº */
+        right: 60px;
+        /* Ajusta la distancia desde el borde derecho */
+        cursor: pointer;
+        font-size: 18px;
+        color: black;
+        z-index: 100;
+    }
+
+     .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: white; /* Fondo blanco */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 25px 0;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Color de fondo oscuro */
+        display: none;
+        flex-direction: column;
+        text-align: left;
+        padding: 10px 0;
+    }
+    nu:checked~.navbar { 
+        display: flex;
+        flex-direction: column;
+        /* Para que los elementos del menÃº sean verticales */
+        align-items: center;
+        padding: 10px 0;
+    }
+    .menu-icono {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        filter: invert(1);
+    }
+
+    #menu:checked~.navbar ul {
+        display: block;
+        /* Show menu when clicked */
+    }
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .menu label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #735943;
+        display: none;
+    }
+    #menu:checked ~ .navbar {
+        display: flex; /* Mostrar el menú cuando el checkbox está activado */
+    }
+    .navbar ul li a {
+        color: white !important; /* Hace el texto blanco */
+    }
+    .testimonios {
+        flex-grow: 1;
+    }
+    .footer {
+        margin-top: 50px !important; /* Empuja el footer hacia abajo */
+    }
+}
