@@ -1,0 +1,123 @@
+.contenedor-testimonios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.testimonio{
+    background-color: #735943;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.testimonio p{
+    font-size: 1rem;
+    color: #DDD;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.info-cliente{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    object-fit: cover;
+}
+.info-cliente img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover;
+    object-position: top;
+}
+.texto{
+    font-size: 1rem;
+    color: #ddd;
+    font-style: italic;
+}
+.cliente{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.cliente img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.info-cliente h4{
+    font-size: 1rem;
+    margin: 0;
+    color: #fff;
+}
+.info-cliente p{
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 0;
+}
+.testimonios{
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 120px !important;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titulo h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-top: 50px;
+}
+.titulo h2{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contenedor-testimonios{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .testimonios {
+        padding-bottom: 150px; /* Asegura espacio entre testimonios y footer */
+    }
+
+    .contenedor-testimonios {
+        max-width: 90%; /* Reduce el ancho de los testimonios */
+    }
+
+    .testimonio {
+        width: 90%; /* Hace que cada caja sea más pequeña */
+        max-width: 400px;
+        margin: 0 auto; /* Centra los testimonios */
+        padding: 15px; /* Reduce el padding */
+    }
+
+    .footer {
+        margin-top: 30px; /* Separa el footer en móviles */
+    }
+}
